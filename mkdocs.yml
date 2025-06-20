@@ -1,0 +1,35 @@
+site_name: Análisis de Riesgos empleando la Metodolgía INFORM RISK INDEX
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+  features:
+    - content.code.annotate
+    - content.math
+
+markdown_extensions:
+  - pymdownx.arithmatex
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
+  - data:text/javascript,document.addEventListener("DOMContentLoaded",function(){var style=document.createElement("style");style.innerHTML=":root{--md-primary-fg-color:#e2001a;--md-accent-fg-color:#e2001a;}";document.head.appendChild(style);});
+
+nav:
+  - Sobre la página: Introducción.md
+  - Introducción al análisis de riesgo:
+      - Introducción a INFORM: introduccion_a_inform.md
+  - Developer Guide: developerguide.md
+  - Orientaciones para desarrollar indicadores locales: indicator.md
