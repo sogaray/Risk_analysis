@@ -30,7 +30,8 @@ extra_javascript:
   - data:text/javascript,document.addEventListener("DOMContentLoaded",function(){var style=document.createElement("style");style.innerHTML=":root{--md-primary-fg-color:#e2001a;--md-accent-fg-color:#e2001a;}";document.head.appendChild(style);});
 
 nav:
-  - Sobre la página: Introducción.md
+  - Inicio: index.md
+  - Sobre la página: Introduccion.md
   - Gestión de la Información: 
       - Sobre esta sección: IM_intro.md
       - Fundamentos de Búsqueda de Datos: fundamentos.md
