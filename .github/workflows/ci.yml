@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7  # Latest v4 to avoid deprecation
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,12 +27,13 @@ jobs:
           mkdocs build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v4  # Compatible with v4 artifacts
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./site
+          retention-days: 1  # Matches v4 default for Pages deploys
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -50,4 +51,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4  # Latest v4 for improved compatibility
