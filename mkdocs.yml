@@ -1,13 +1,14 @@
-site_name: Análisis de Riesgos empleando la Metodolgía INFORM RISK INDEX
+site_name: Espacio de Formación y Gestión del Conocimiento
 
 theme:
+  logo: assets/logo.png
   name: material
   palette:
     - scheme: default
-      primary: red
+      primary: blue
       accent: red
     - scheme: slate
-      primary: red
+      primary: blue
       accent: red
       toggle:
         icon: material/weather-night
@@ -16,6 +17,7 @@ theme:
     - content.code.annotate
     - content.math
 
+copyright: Copyright &copy; 2025 Cruz Roja Alemana
 markdown_extensions:
   - pymdownx.arithmatex
 
@@ -29,7 +31,13 @@ extra_javascript:
 
 nav:
   - Sobre la página: Introducción.md
+  - Gestión de la Información: 
+      - Sobre esta sección: IM_intro.md
+      - Fundamentos de Búsqueda de Datos: fundamentos.md
+      - Fuentes en línea para la búsqueda de datos: fuenteslinea.md
+      - Gestión de Datos e Información: gestiondatos.md
+      - Laboratorio Virtual: labim.md
   - Introducción al análisis de riesgo:
+      - Sobre esta sección: Ana_risg.md 
       - Introducción a INFORM: introduccion_a_inform.md
-  - Developer Guide: developerguide.md
-  - Orientaciones para desarrollar indicadores locales: indicator.md
+      - Orientaciones para desarrollar indicadores locales: indicator.md
