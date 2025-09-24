@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
@@ -27,14 +27,12 @@ jobs:
           mkdocs build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Explicit v4 to avoid deprecation
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages-site
           path: ./site
-          retention-days: 1
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -50,12 +48,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4  # Explicit v4
-        with:
-          name: github-pages-site
-          path: ./site
-
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
