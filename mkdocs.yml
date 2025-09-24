@@ -1,0 +1,43 @@
+site_name: Espacio de Formación y Gestión del Conocimiento
+
+theme:
+  logo: assets/logo.png
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: red
+    - scheme: slate
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+  features:
+    - content.code.annotate
+    - content.math
+
+copyright: Copyright &copy; 2025 Cruz Roja Alemana
+markdown_extensions:
+  - pymdownx.arithmatex
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
+  - data:text/javascript,document.addEventListener("DOMContentLoaded",function(){var style=document.createElement("style");style.innerHTML=":root{--md-primary-fg-color:#e2001a;--md-accent-fg-color:#e2001a;}";document.head.appendChild(style);});
+
+nav:
+  - Sobre la página: Introducción.md
+  - Gestión de la Información: 
+      - Sobre esta sección: IM_intro.md
+      - Fundamentos de Búsqueda de Datos: fundamentos.md
+      - Fuentes en línea para la búsqueda de datos: fuenteslinea.md
+      - Gestión de Datos e Información: gestiondatos.md
+      - Laboratorio Virtual: labim.md
+  - Introducción al análisis de riesgo:
+      - Sobre esta sección: Ana_risg.md 
+      - Introducción a INFORM: introduccion_a_inform.md
+      - Orientaciones para desarrollar indicadores locales: indicator.md
