@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # use v4 (latest)
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5  # use v5 (latest)
         with:
           python-version: '3.x'
 
@@ -27,7 +27,7 @@ jobs:
           mkdocs build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2  # <--- updated to v2
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./site
 
@@ -39,12 +39,6 @@ jobs:
       pages: write
       id-token: write
 
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -52,4 +46,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
