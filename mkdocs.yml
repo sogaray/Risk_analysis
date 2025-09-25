@@ -20,7 +20,9 @@ theme:
 copyright: Copyright &copy; 2025 Cruz Roja Alemana
 markdown_extensions:
   - pymdownx.arithmatex
-
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
 
@@ -36,9 +38,11 @@ nav:
       - Sobre esta sección: IM_intro.md
       - Fundamentos de Búsqueda de Datos: fundamentos.md
       - Fuentes en línea para la búsqueda de datos: fuenteslinea.md
-      - Gestión de Datos e Información: gestiondatos.md
-      - Laboratorio Virtual: labim.md
+      - Limpieza y mejora de los datos : 
+        - Gestión de datos: gestiondatos.md
+        - Limpieza y transformación de datos con herramientas de software : Excel.md
   - Introducción al análisis de riesgo:
       - Sobre esta sección: Ana_risg.md 
       - Introducción a INFORM: introduccion_a_inform.md
       - Orientaciones para desarrollar indicadores locales: indicator.md
+  - Laboratorio Virtual: labim.md

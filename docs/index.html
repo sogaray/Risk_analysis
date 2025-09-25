@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Espacio de Formación - Login</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 100px; }
+    input { padding: 8px; font-size: 16px; }
+    button { padding: 8px 12px; font-size: 16px; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Acceso al sitio</h1>
+  <p>Ingrese la contraseña para continuar:</p>
+  <input type="password" id="passwordInput" placeholder="Contraseña">
+  <button onclick="checkPassword()">Entrar</button>
+
+  <script>
+    const PASSWORD = "TuContraseña123"; // Change this to your password
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === PASSWORD) {
+        // Redirect to your main MkDocs page
+        window.location.href = "docs/index.md"; 
+      } else {
+        alert("Contraseña incorrecta");
+      }
+    }
+  </script>
+</body>
+</html>
