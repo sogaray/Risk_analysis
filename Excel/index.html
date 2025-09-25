@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../IM_intro/">
+        <link rel="prev" href="../gestiondatos/">
       
       
-        <link rel="next" href="../fuenteslinea/">
+        <link rel="next" href="../Ana_risg/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Fundamentos de Búsqueda de Datos - Espacio de Formación y Gestión del Conocimiento</title>
+        <title>Limpieza y transformación de datos con herramientas de software - Espacio de Formación y Gestión del Conocimiento</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fundamentos de Búsqueda de Datos
+              Limpieza y transformación de datos con herramientas de software
             
           </span>
         </div>
@@ -325,17 +325,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../fundamentos/" class="md-nav__link">
         
   
   
@@ -346,7 +339,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -379,18 +371,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
@@ -406,7 +400,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Limpieza y mejora de los datos
@@ -440,10 +434,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Excel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -454,6 +455,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -642,77 +644,48 @@
 
 
 
-  <h1>Fundamentos de Búsqueda de Datos</h1>
+  <h1>Limpieza y transformación de datos con herramientas de software</h1>
 
-<h3 style="color: red;">Datos e información </h3>
+<p style="text-align: justify;">La limpieza y transformación de los datos puede realizarse en varios programas de computadora, la elección de este, sin embargo, debe hacerse a partir de la experiencia de la persona encargada, así como la cantidad de datos a trabajar, entre otros. En este apartado utlizamos software convencionales y populares para la limpieza de pocos datos, y para la enseñanza se propone el uso de Microsoft Excel. Este software es bastante popular para ejercicios poco demandantes y permitirá introducir a este campo en una manera amigable a los participantes.  
 
-<p style="text-align: justify;">Partes determinadas de hechos, como cantidades, precios, medidas, fechas, nombres de lugares y personas, o direcciones. Hechos y estadísticas recopilados para referencia o análisis.  <p>
+<p style="text-align: justify;">Iniciaremos interpretando los campos en Excel, ¿A que nos referimos cuando mencionamos filas y columnas? Con esto nuevos usuarios que no han tenido contacto o muy poco conocimiento con hojas de cálculo podrán leer celdas correctamente.  
 
-        <div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Los datos están por todas partes
-<span class="k">*</span><span class="w"> </span>Los datos son naturalmente desordenados y carecen de sentido
-<span class="k">*</span><span class="w"> </span>Los datos pueden ser estructurados, semiestructurados, no estructurados y procesados
-<span class="k">*</span><span class="w"> </span>La información son datos que tienen sentido.
+<p style="text-align: justify;">En esta sección nuestro interés como facilitadores es guiarlos en pasos simples en la limpieza básica de datos con Excel. </p>
+
+        <div class="highlight"><pre><span></span><code>Excel no es un software de bases de datos; por lo tanto, aunque permite organizar datos en tablas, 
+no se deben considerar estas tablas como bases de datos formales. Excel es una herramienta de hoja 
+de cálculo que facilita la manipulación, análisis y visualización de datos de manera sencilla, pero 
+carece de funcionalidades avanzadas de gestión, seguridad y consulta que caracterizan a un sistema 
+de gestión de bases de datos.
 </code></pre></div>
-<h4> Los datos deben ser interpretados, procesados, analizados o presentados para convertirse en Informativos </h4>
 
-<p style="text-align: justify;"> En el movimieno se han clasificado los tipos de datos en 5 categorias: 
+<div class="highlight"><pre><span></span><code>¿Qué son filas y columnas en Excel?
 
-  <li>Comunidad/ciudadano</li>
-  <li>Gobierno</li>
-  <li>Físico</li>
-  <li>Antena/satélite</li>
-  <li>Sensores/nuevas tecnologías y tecnologías emergentes</li>
+Imagina que Excel es una tabla gigante. 
 
-
-<h3 style="color: red;">Gestión de Datos e Información:  Conceptos básicos  </h3>
-<p style="text-align: justify;">El análisis y la distribución de datos relacionados directamente con las operaciones y las poblaciones afectadas, que incluyen detalles geográficos, demográficos y estadísticos, es crucial para respaldar un proceso de toma de decisiones y elaboración de informes fundamentado en datos. Este proceso abarca el análisis de información relevante en diferentes áreas temáticas y sectores, además de la evaluación de necesidades y vulnerabilidades, así como datos con referencias geográficas específicas. </p>
-
-<p style="text-align: justify;">El análisis y la distribución de datos relacionados directamente con las operaciones y las poblaciones afectadas, que incluyen detalles geográficos, demográficos y estadísticos, es crucial para respaldar un proceso de toma de decisiones y elaboración de informes fundamentado en datos. Este proceso abarca el análisis de información relevante en diferentes áreas temáticas y sectores, además de la evaluación de necesidades y vulnerabilidades, así como datos con referencias geográficas específicas. </p>
-
-<p style="text-align: justify;">Objeto agrupadoCon esto en mente: El término "gestión de la información" abarca "las diversas etapas del procesamiento de la información, desde su producción hasta el almacenamiento, recuperación y difusión, con el fin de mejorar el funcionamiento de una organización." </p>
-
-        <div class="highlight"><pre><span></span><code>El &quot;flujo de datos&quot; es un ejemplo de habilidades preparadas para el manejo de datos.
-Todos tenemos distintos niveles de conocimiento.
-</code></pre></div>
-<p> La estructura de los flujos de datos es la siguiente:  </p>
-
-<li>Buscar 
-<li>Obtener  
-<li>Verificar  
-<li>Limpiar 
-<li>Analizar 
-<li>Presentar 
+Columnas
+Van de arriba a abajo. 
+Se identifican con letras: A, B, C, D, ... 
+Por ejemplo: la columna A es toda la línea vertical debajo de la letra A. 
 
 
-<p>La capacidad de comprender e interpretar datos no es lo mismo que tener las habilidades para manipularlos y trabajarlos técnicamente. Los gestores de información humanitaria (IM) suelen tener grandes habilidades en el manejo de datos.</p>
-
-Fuente:https://preparecenter.org/wp-content/sites/default/files/slidedeck9dataandimbasics110518.pdf
-
-
-<h3 style="color: red;">Tipo de fuentes de datos.  </h3>
-
-<p style="text-align: justify;">Ante el inicio de cualquier proceso de consulta, es importante el conocer y seleccionar fuentes adecuadas. Sin duda las fuentes de datos se vuelven uno de los aspectos clave a la hora de consultar, documentar y revisar todo tipo de información.</p>  
-        <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">*</span><span class="w"> </span>¿Es útil para mis objetivos? 
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>¿Está vigente? 
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>¿Se obtuvo con una metodología adecuada? 
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>¿Proviene de una institución o autor confiable?
-</code></pre></div>
-<h4 style="color: black;">Fuentes de datos primarios.  </h4>
-<p>Datos recolectados directamente para un propósito específico. Son originales y no han sido procesados previamente.</p> 
-
-Ejemplos: encuestas, muestreos en campo, mediciones directas, sensores remotos propios. 
-<h4 style="color: black;">Fuentes de datos secundarios.  </h4> 
-Datos que han sido recolectados por otros, pero que se reutilizan con un nuevo propósito. Estos datos pueden haber sido procesados o interpretados previamente. 
-<p>Ejemplos: bases de datos públicas, reportes institucionales, conjuntos de datos descargados de portales.</p>
+Filas
+Van de izquierda a derecha. 
+Se identifican con números: 1, 2, 3, 4, ... 
+Por ejemplo: la fila 1 es toda la línea horizontal al lado del número 1. 
 
 
-<h4 style="color: black;">Fuentes de datos terciarios.  </h4>
+¿Y una celda?
+Es el cuadro donde se cruza una columna y una fila. 
+Cada celda tiene un nombre (o “referencia”). 
+Ejemplo: la celda B2 está en la columna B y la fila 2. 
 
-Repositorios que agrupan y organizan fuentes secundarias y primarias para facilitar su acceso. 
-<p>Ejemplos: catálogos de datos abiertos, plataformas como Humanitarian Data Exchange, GeoNode, o Wikipedia en formato estructurado. </p>
 
-        <div class="highlight"><pre><span></span><code>Fuentes:https://ponce.inter.edu/cai/manuales/FUENTES-PRIMARIA.pdf 
-        http://biblioteca.udgvirtual.udg.mx/portal/clasificacion-general-de-las-fuentes-de-informacion
+Cómo leer una celda 
+Si ves “B5”, piensas: 
+Letra B → columna 
+Número 2 → fila 
+Así que buscas el punto donde columna B se cruza con fila 2. 
 </code></pre></div>
 
 

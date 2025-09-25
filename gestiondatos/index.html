@@ -12,7 +12,7 @@
         <link rel="prev" href="../fuenteslinea/">
       
       
-        <link rel="next" href="../labim/">
+        <link rel="next" href="../Excel/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Gestión de Datos e Información - Espacio de Formación y Gestión del Conocimiento</title>
+        <title>Gestión de datos - Espacio de Formación y Gestión del Conocimiento</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gestión de Datos e Información
+              Gestión de datos
             
           </span>
         </div>
@@ -375,6 +375,46 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Limpieza y mejora de los datos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Limpieza y mejora de los datos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -386,7 +426,7 @@
   
   
   <span class="md-ellipsis">
-    Gestión de Datos e Información
+    Gestión de datos
     
   </span>
   
@@ -405,17 +445,25 @@
   
   
     <li class="md-nav__item">
-      <a href="../labim/" class="md-nav__link">
+      <a href="../Excel/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Laboratorio Virtual
+    Limpieza y transformación de datos con herramientas de software
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -542,6 +590,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../labim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Laboratorio Virtual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -574,9 +644,48 @@
 
 
 
-  <h1>Gestión de Datos e Información</h1>
+  <h1>Gestión de datos</h1>
 
+<p style="text-align: justify;">Es importante centrarse en la calidad de los datos. Sin estar cien por ciento seguros que los datos no están completamente limpios esto podría estropear la etapa de análisis y la capacidad que esta sea de utilidad para el fin que se busca. Los datos vienen con diferentes errores, ya sea por error humano, por el instrumento utilizado o por incorrecta manipulación/transformación de los datos. </p>
 
+<p style="text-align: justify;">El proceso de limpieza de los datos afecta notablemente los resultados finales esperados. Se requieren acciones para tratar valores perdidos, identificar valores atípicos y otras anomalías que pueden afectar nuestro análisis. </p>
+
+<p style="text-align: justify;">La ACAPS indica que hay 4 pasos en la limpieza de datos: </p>
+
+<p>La <strong>detección</strong> consiste en buscar sistemáticamente características sospechosas en cuestionarios de evaluación, bases de datos o conjuntos de datos para análisis.   </p>
+<p>El <strong>diagnóstico</strong> (identificación de la naturaleza de los datos defectuosos) y el <strong>tratamiento</strong> (eliminación, edición o mantenimiento de los datos tal como están) en las fases de limpieza de datos requieren una comprensión profunda de todos los tipos y fuentes de errores posibles durante los procesos de recolección y entrada de datos.   </p>
+<p><strong>Documentar</strong> los cambios implica dejar un rastro de auditoría de los errores detectados, alteraciones, adiciones y verificaciones de errores, lo cual permitirá regresar al valor original si es necesario. </p>
+<pre><code>Fuente: https://www.acaps.org/fileadmin/user_upload/acaps_technical_brief_data_cleaning_april_2016_0.pdf
+</code></pre>
+<h3 style="color: red;"> Problemas comunes de calidad de datos (y cómo solucionarlos) </h3>
+
+<p>Una calidad deficiente de los datos da como resultado análisis poco fiables. Podemos mencionar una gran cantidad de problemas, pero para mantener el contenido simple, mencionaremos ocho (8) problemas que más encontraremos.  </p>
+<ul>
+<li>
+<p><strong>Datos inexactos:</strong> automatizar la entrada de datos. Cuanto más se automatice, menos errores humanos habrá​. </p>
+</li>
+<li>
+<p><strong>Datos incompletos:</strong> Utilice sistemas que marquen y rechacen automáticamente los registros incompletos al importar datos de fuentes externas. Luego, puede intentar completar los campos faltantes comparando sus datos con otra fuente similar (y, con suerte, más completa)​ </p>
+</li>
+<li>
+<p><strong>Datos duplicados:</strong> Se puede eliminar todos los registros duplicados menos uno; idealmente, el que mejor se adapte a su esquema interno. Mejor aún, puede fusionar los registros duplicados, lo que puede resultar en un análisis más completo, ya que ambos registros pueden contener detalles ligeramente diferentes que se complementan. </p>
+</li>
+<li>
+<p><strong>Formato inconsistente:</strong> Trabajar con diferentes sistemas de medición puede causar problemas similares. Si una fuente utiliza el sistema métrico decimal y otra, pies y pulgadas, se debe establecer un estándar interno y garantizar que todos los datos importados se conviertan correctamente​. Fechas, horas… </p>
+</li>
+<li>
+<p><strong>Datos no estructurados:</strong> La principal diferencia entre datos estructurados y no estructurados radica en su organización y formato. Los datos estructurados siguen un modelo predefinido, como una tabla con columnas y filas, lo que facilita su análisis y consulta. Por otro lado, los datos no estructurados carecen de una estructura predefinida y pueden tener diversos formatos, como imágenes, videos o documentos, lo que los hace más complejos de analizar. ​Utilice una herramienta de integración de datos </p>
+</li>
+<li>
+<p><strong>Datos oscuros:</strong> Los datos oscuros son datos no utilizados que se recopilan, almacenan y luego ignoran.​ Los datos oscuros pueden ser cualquiera o todos los siguientes: Más viejo, Incompleto​, Incompatible, Redundante​, Irrelevante </p>
+</li>
+<li>
+<p><strong>Datos obsoletos:</strong> Los datos obsoletos son información que ya no es relevante ni actual. Solucionar el problema de los datos obsoletos requiere actualizaciones periódicas. ​ </p>
+</li>
+<li>
+<p><strong>Datos irrelevantes:</strong> Los datos irrelevantes son aquellos que no están directamente relacionados con los objetivos o decisiones del contexto actual​. No asumir que adquirir y conservar toda la información posible, les ayudará en algún momento en el futuro.</p>
+</li>
+</ul>
 
 
 
